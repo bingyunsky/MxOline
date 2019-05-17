@@ -37,7 +37,7 @@ class Teacher(models.Model):
     points = models.CharField('教学特点', max_length=50)
     click_nums = models.IntegerField('点击数', default=0)
     fav_nums = models.IntegerField('收藏数', default=0)
-    add_time = models.DateTimeField(default=datetime.now)
+    add_time = models.DateTimeField('入职时间', default=datetime.now)
 
     class Meta:
         verbose_name = '教师'
