@@ -130,3 +130,7 @@ AUTH_USER_MODEL = 'users.UserProfile'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+AUTHENTICATION_BACKENDS = (
+    'users.views.CustomBackend',
+)
